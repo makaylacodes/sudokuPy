@@ -48,6 +48,7 @@ def solve_sudoku(puzzle):
     #if there is space, make guess 1-9
     for guess in range (1,10): 
 
+        #this function checks if the puzzle is valid
         if is_valid(puzzle, guess, row, col):
             #place the guess on the row,col
             puzzle[row][col] = guess
